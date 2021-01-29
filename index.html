@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/style.css">
+    <link href="/images/logo.png" rel="icon" />
+    <title>Temple Arts</title>
+</head>
+
+<body>
+    <section class="showcase active">
+        <header>
+            <h2 class="logo">Temple Arts</h2>
+            <div class="toggle active"></div>
+        </header>
+        
+        <video src="tempArt.mov" muted loop autoplay></video>
+        <div class="overlay"></div>
+        <div class="text">
+            <h2>Defend Yourself</h2>
+            <h3>The Hanmi Kwan way</h3>
+            <p>We teach Tang Soo Do, Mixed Martial Arts(MMA), Cardio MMA and Filipino Sword.</p>
+            <p> Train with Grand Master Thomas Caulfield and learn the true meaning of Martial Arts. GM Caulfield has
+                spent his whole life training with well known Martial Artists from around the world.
+                GM Caulfield started training with his father until he met his next master, Jae Chul Shin and many more
+                Masters. </p>
+            <a href="#">Explore</a>
+        </div>
+        <ul class="social">
+            <li><a href="#"><img src="/images/facebook.png"></a></li>
+            <li><a href="#"><img src="/images/twitter.png"></a></li>
+            <li><a href="#"><img src="/images/instagram.png"></a></li>
+        </ul>
+    </section>
+    <div class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Destination</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <script>
+        const menuToggle = document.querySelector('.toggle');
+        const showcase = document.querySelector('.showcase');
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            showcase.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>
